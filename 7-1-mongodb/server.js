@@ -187,7 +187,7 @@
 // import mongoose
 import mongoose from "mongoose";
 // establish connection
-mongoose.connect("mongodb+srv://LeenGhazi:Leen1234@cluster0.gra6gku.mongodb.net/")
+mongoose.connect("mongodb://LeenGhazi:Leen1234@ac-xlu74yp-shard-00-00.gra6gku.mongodb.net:27017,ac-xlu74yp-shard-00-01.gra6gku.mongodb.net:27017,ac-xlu74yp-shard-00-02.gra6gku.mongodb.net:27017/TestDB?ssl=true&replicaSet=atlas-<yourReplicaSet>-shard-0&authSource=admin&retryWrites=true&w=majority")
 .then(() => console.log("Connected"))
 .catch(err => console.log(err));
 
