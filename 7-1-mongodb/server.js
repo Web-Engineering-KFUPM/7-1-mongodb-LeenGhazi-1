@@ -187,7 +187,7 @@
 // import mongoose
 import mongoose from "mongoose";
 // establish connection
-mongoose.connect("mongodb+srv://LeenGhazi:<Leen1234>@cluster0.gra6gku.mongodb.net/")
+mongoose.connect("mongodb+srv://LeenGhazi:Leen1234@cluster0.gra6gku.mongodb.net/")
 .then(() => console.log("Connected"))
 .catch(err => console.log(err));
 
