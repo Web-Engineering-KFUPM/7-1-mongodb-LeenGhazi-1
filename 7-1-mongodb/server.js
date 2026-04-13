@@ -187,12 +187,17 @@
 // import mongoose
 import mongoose from "mongoose";
 // establish connection
-mongoose.connect("mongodb://LeenGhazi:Leen1234@ac-xlu74yp-shard-00-00.gra6gku.mongodb.net:27017,ac-xlu74yp-shard-00-01.gra6gku.mongodb.net:27017,ac-xlu74yp-shard-00-02.gra6gku.mongodb.net:27017/TestDB?ssl=true&replicaSet=atlas-<yourReplicaSet>-shard-0&authSource=admin&retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://LeenGhazi:Leen1234@cluster0.gra6gku.mongodb.net/")
 .then(() => console.log("Connected"))
 .catch(err => console.log(err));
 
 // define schema
-
+const studentSchema = new mongoose.Schema({
+         name: String,
+         age: Number,
+         major: String
+      });
+const Student = mongoose.model("Student", studentSchema);
 
 // create document
 
